@@ -1,0 +1,13 @@
+.header 
+  .header__bar
+    = link_to root_path do
+      %h.title ShareMe
+    .NewPost New
+
+.content
+  .content__title 新規記事の投稿
+  = form_with model: @post, class: :form, local: true do |form|
+    = form.file_field :image, placeholder: "Image Url", class: :form__image
+    = form.url_field :movie, placeholder: "Movie Url", class: :form__movie
+    = form.text_area :text, placeholder: "Comment", class: :form__text
+    = form.submit 'シェアする', class: :form__btn 

@@ -1,0 +1,41 @@
+.body
+  .header 
+    .header__bar
+      %h.title ShareMe
+      - if user_signed_in?
+        .user_nav
+          = link_to "Logout", destroy_user_session_path, method: :delete, class: "logput_btn"
+          = link_to new_post_path, class: 'post_btn' do
+            = icon('fas', 'edit', class: 'edit_btn')
+      - else
+        .user_nav
+          = link_to "Login", new_user_session_path, method: :get, class: 'login_btn'
+          = link_to "Create Account", new_user_registration_path, method: :get, class: "registration_btn"
+
+  -# .main_content
+  -#   - @posts. each do |post|
+  -#     .post
+  -#       .post__image
+  -#         =post.image
+  -#       .post__movie
+  -#         =post.movie
+  -#       .post__text
+  -#         = post.text 
+  -#       .post__date
+  -#         =post.created_at
+
+
+  .main_content
+    - @posts. each do |post|
+      .content_post{:style => "background-image:url(#{post.image});"}
+        -# - simple_format(post.text)
+        -# .post__image
+        -#   =post.image
+        .post__movie
+          =post.movie
+        .post__text
+          = post.text 
+        .post__date
+          =post.created_at         
+
+

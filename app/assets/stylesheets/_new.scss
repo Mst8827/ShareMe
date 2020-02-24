@@ -1,0 +1,65 @@
+.header {
+  width: 100vw;
+  height: 80px;
+  background-color: black;
+  position: fixed;
+  z-index: 1;
+
+  &__bar {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+
+      h {
+        font-family: 'Logo';
+        color: #ACB6E5;//非対応のブラウザでの文字色を設定
+        background: -webkit-linear-gradient(0deg, rgb(124, 144, 235), rgb(102, 228, 205));//背景色にグラデーションを指定
+        -webkit-background-clip: text;//テキストでくり抜く
+        -webkit-text-fill-color: transparent;//くり抜いた部分は背景を表示
+        font-size: 70px;
+        margin-left: 30px;
+      }
+      
+    }
+    
+
+    
+  }
+
+
+  .NewPost {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 80px;
+    margin-right: 40px;
+    font-family: 'UserName';
+  }
+
+}
+
+.content {
+  padding-top: 80px;
+  min-height: 100vh;
+  background-color: rgb(229, 252, 229);
+
+  &__title {
+    text-align: center;
+  }
+  
+  .form {
+    height: 600px;
+    width: 600px;
+    margin: 0 auto;
+    background-color: rgb(238, 245, 238);
+
+    .form__image {
+      height: 100px;
+      width: 400px;
+    }
+  }
+
+}
