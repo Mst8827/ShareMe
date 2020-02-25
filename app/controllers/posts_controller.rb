@@ -14,10 +14,15 @@ class PostsController < ApplicationController
     redirect_to root_path
   end
 
+  def destroy
+    post = Post.find(params[:id])
+    post.destroy
+  end
+
 
   private
   def post_params
-    params.require(:post).permit(:text, :image, :movie)
+    params.require(:post).permit(:text, :image, :movie).merge(user_id: current_user.id)
   end
 
   def move_to_index

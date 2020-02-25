@@ -1,3 +1,4 @@
 class Post < ApplicationRecord
-  validates :text, :image, :movie, presence: true
+  validates :text, :image, presence: true
+  belongs_to :user
 end

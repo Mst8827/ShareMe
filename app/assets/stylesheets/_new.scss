@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Logo';
+  src: url('KavoonRegular-Dp7E.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 .header {
   width: 100vw;
   height: 80px;
@@ -31,7 +39,7 @@
 
 
   .NewPost {
-    color: white;
+    color: whitesmoke;
     font-size: 30px;
     text-align: center;
     line-height: 80px;
@@ -44,22 +52,56 @@
 .content {
   padding-top: 80px;
   min-height: 100vh;
-  background-color: rgb(229, 252, 229);
+  background-color: #F0FFF0;
 
-  &__title {
-    text-align: center;
-  }
-  
-  .form {
+  &__form_box {
     height: 600px;
     width: 600px;
     margin: 0 auto;
+    margin-top: 50px;
     background-color: rgb(238, 245, 238);
 
-    .form__image {
-      height: 100px;
-      width: 400px;
+    &__title {
+      font-family: 'Logo';
+      font-size: 30px;
+      height: 70px;
+      text-align: center;
+      line-height: 70px;
     }
+
+  }
+  
+  .form {
+    height: 450px;
+
+    .form_image {
+      display: block;
+      height: 50px;
+      width: 500px;
+      margin: 0 50px 10px;
+      
+    }
+
+    .form_text {
+      display: block;
+      height: 400px;
+      width: 500px;
+      margin: 0 50px 10px;
+    }
+
+    .form_btn {
+      display: block;
+      font-family: 'Logo';
+      width: 500px;
+      height: 40px;
+      margin: 0 50px 0;
+      border-radius: 2rem;
+      background-color: black;
+      color: white;
+      font-size: 20px;
+
+    }
+
   }
 
 }
