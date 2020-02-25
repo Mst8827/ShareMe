@@ -5,9 +5,10 @@
     .NewPost New
 
 .content
-  .content__title 新規記事の投稿
-  = form_with model: @post, class: :form, local: true do |form|
-    = form.file_field :image, placeholder: "Image Url", class: :form__image
-    = form.url_field :movie, placeholder: "Movie Url", class: :form__movie
-    = form.text_area :text, placeholder: "Comment", class: :form__text
-    = form.submit 'シェアする', class: :form__btn 
+  .content__form_box
+    .content__form_box__title New Post
+    = form_with model: @post, class: :form, local: true do |form|
+      = form.text_field :image, placeholder: "Image Url", class: :form_image
+      -# = form.url_field :movie, placeholder: "Movie Url", class: :form__movie一旦コメントアウト、画像とコメントですすめる
+      = form.text_area :text, placeholder: "Comment", rows: "5", class: :form_text
+      = form.submit 'Share', class: :form_btn 

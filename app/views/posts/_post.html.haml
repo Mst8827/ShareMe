@@ -1,0 +1,23 @@
+.content_post{:style => "background-image:url(#{post.image});"}
+  .
+  - simple_format(post.text)
+  -# .post__image
+  -#   =post.image
+  -# .post__movie
+  -#   =post.movie
+  .post__text
+    = post.text 
+  .post__date
+    =post.created_at
+
+
+-# .post
+-#   .post__image
+-#     -# = image_tag(url_for(:controller =>'posts',:action => 'post.image',:id => 1),:size => '100*100')
+-#     =post.image
+-#   .post__movie
+-#     =post.movie
+-#   .post__text
+-#     = post.text 
+-#   .post__date
+-#     =post.created_at
