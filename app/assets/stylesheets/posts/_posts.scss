@@ -44,6 +44,13 @@
       .user_nav {
         text-align: center;
         line-height: 80px;
+
+        .current_user_name {
+          font-family: 'UserName';
+          font-size: 30px;
+          color: white;
+          margin-right: 30px;
+        }
         
 
         .logput_btn {
@@ -107,6 +114,12 @@
   
   }
 
+  .search_box {
+    padding-top: 80px;
+    width: 500px;
+    height: 100px;
+  }
+
   .main_content {
     height: 100vh;
     width: 100%;
@@ -127,6 +140,16 @@
 
     .post {
       margin-top: 30px;
+      margin: 0 auto;
+      width: 600px;
+
+      .post_user_nickname {
+        
+      }
+
+      .more {
+        
+      }
       
       
       &__image {

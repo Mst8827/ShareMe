@@ -1,0 +1,26 @@
+.body
+  .header 
+    .header__bar
+      = link_to root_path do
+        %h.title ShareMe
+      .current_user_name
+        = @nickname
+
+  .contents
+    .contents_user_info
+      = @nickname
+      さんの投稿一覧
+    
+      - @posts.each do |post|
+        .user_posts
+          - simple_format(post.text)
+          .post__image
+            = image_tag "#{post.image}", :width => '500', :height => '400'
+          .post__movie
+            =post.movie
+          .post__text
+            = post.text 
+          .post__date
+            =post.created_at
+
+      

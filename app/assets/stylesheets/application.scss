@@ -1,9 +1,12 @@
-@import "posts";
+@import "posts/posts";
 @import "reset";
 @import "modules/messages";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-@import "new";
-@import "edit";
+@import "posts/new";
+@import "posts/edit";
+@import "users/show";
+@import "posts/show";
+@import "posts/search";
 
 
