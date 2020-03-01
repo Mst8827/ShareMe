@@ -4,6 +4,7 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.includes(:user)
+    @posts = Post.order("id DESC")
   end
 
   def new

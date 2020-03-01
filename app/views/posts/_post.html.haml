@@ -31,12 +31,12 @@
         = link_to '削除', "/posts/#{post.id}", method: :delete
   - simple_format(post.text)
 
+  .post__text
+    = post.text 
   .post__image
     = link_to "/posts/#{post.id}" do
       = image_tag "#{post.image}", :width => '500', :height => '400'
   .post__movie
-    =post.movie
-  .post__text
-    = post.text 
+    =post.movie  
   .post__date
-    =post.created_at
+    = post.created_at.to_s(:datetime_jp)

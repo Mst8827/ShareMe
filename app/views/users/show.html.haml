@@ -14,13 +14,13 @@
       - @posts.each do |post|
         .user_posts
           - simple_format(post.text)
+          .post__text
+            = post.text 
           .post__image
             = image_tag "#{post.image}", :width => '500', :height => '400'
           .post__movie
-            =post.movie
-          .post__text
-            = post.text 
+            =post.movie          
           .post__date
-            =post.created_at
+            = post.created_at.to_s(:datetime_jp)
 
       

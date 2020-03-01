@@ -116,8 +116,18 @@
 
   .search_box {
     padding-top: 80px;
-    width: 500px;
-    height: 100px;
+    
+
+    .search_input {
+      width: 600px;
+      height: 60px;
+      margin-top: 70px;
+      margin-left: 445px;
+      border-radius:30px;
+      border:none;
+      outline: none;
+      padding: 2px 8px;
+    }
   }
 
   .main_content {
@@ -140,7 +150,8 @@
 
     .post {
       margin-top: 30px;
-      margin: 0 auto;
+      // margin: 0 auto;
+      margin-left: 490px;
       width: 600px;
 
       .post_user_nickname {
