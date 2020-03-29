@@ -10,7 +10,7 @@
           -# = link_to users_current_user_id_path, class: 'mypage_btn' do
           -#   = icon('fas', 'fa-user-circle')
 
-          = link_to "Logout", destroy_user_session_path, method: :delete, class: "logput_btn"
+          = link_to "Logout", destroy_user_session_path, method: :delete, class: "logout_btn"
           = link_to new_post_path, class: 'post_btn' do
             = icon('fas', 'edit', class: 'edit_btn')
       - else
@@ -26,3 +26,4 @@
   .main_content
     - @posts. each do |post|
       = render partial: "post", locals: {post: post}   
+

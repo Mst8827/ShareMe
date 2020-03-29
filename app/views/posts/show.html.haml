@@ -4,10 +4,11 @@
       %h.title ShareMe
 
 .row_contents
-  .row_contents_detail
-    .row_contents__detail__image
-      = image_tag @post.image, :width => '500', :height => '400'
+  .row_contents__detail
+    .row_contents__detail__image    
       = simple_format(@post.text)
+      = image_tag @post.image, :width => '500', :height => '400'
+
 
   .comments_input_form
     - if current_user

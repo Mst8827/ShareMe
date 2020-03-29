@@ -51,14 +51,22 @@
           color: white;
           margin-right: 30px;
         }
+
+        .current_user_name:hover {
+          color: #C0C0C0;
+        }
         
 
-        .logput_btn {
+        .logout_btn {
           text-decoration: none;
           color: whitesmoke;
           font-family: 'UserName';
           font-size: 30px;
           margin-right: 30px;
+        }
+
+        .logout_btn:hover {
+          color: #C0C0C0;
         }
 
         .post_btn {
@@ -67,7 +75,10 @@
           font-family: 'UserName';
           font-size: 22px;
           margin-right: 30px;
+        }
 
+        .post_btn:hover {
+          color: #C0C0C0;
         }
 
         .login_btn {
@@ -78,6 +89,10 @@
           margin-right: 30px;
         }
 
+        .login_btn:hover {
+          color: #C0C0C0;
+        }
+
         .registration_btn {
           text-decoration: none;
           color: whitesmoke;
@@ -86,28 +101,11 @@
           margin-right: 30px;
           
         }
-  
-        // ul {
-        //   display: flex;
-        //   margin-right: 40px;
-  
-        //   .user_name {
-        //     font-family: 'UserName';
-        //     margin: 20px 20px;
-        //     font-size: 30px;
-        //     color: whitesmoke;
-        //   }
-  
-        //   .post_btn {
-        //     margin: 20px 20px;
-        //     text-decoration: none;
-        //     font-size: 20px;
+        .registration_btn:hover {
+          color: #C0C0C0;
+        }
+        
 
-        //     .edit_btn {
-        //       color: whitesmoke;
-        //     }
-        //   }
-        // }
       }
     
     }
@@ -155,10 +153,37 @@
       width: 600px;
 
       .post_user_nickname {
+       
+
+        .post_user_name_link {
+          text-decoration: none;
+          color: #696969;
+        }
+        .post_user_name_link:hover {
+          font-weight: bold;
+        }
         
       }
 
       .more {
+
+        .more_list {
+          
+          display: flex;
+
+          li {
+            
+            a {
+              text-decoration: none;
+              margin-right: 5px;
+              color: #696969;
+            }
+            a:hover {
+              font-weight: bold;
+            }
+
+          }
+        }
         
       }
       
