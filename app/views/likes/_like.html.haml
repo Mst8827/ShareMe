@@ -1,0 +1,13 @@
+.option__like{:id => "like-link-#{@post.id}"}
+  - if current_user.likes.find_by(post_id: post.id)
+    = link_to dislike_post_path(@post.id, @post.id), method: :delete, remote: true, class: "option__like-on" do
+      .fas.fa-star
+      .option__like-on__text いいね！
+      .option__like-on__count
+        =post.likes.count
+  - else
+    = link_to  like_post_path(@post.id, @post.id), method: :post, remote: true, class: "option__like-off" do
+      .fas.fa-star
+      .option__like-off__text いいね！
+      .option__like-off__count
+        =post.likes.count

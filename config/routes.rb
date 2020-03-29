@@ -6,6 +6,10 @@ Rails.application.routes.draw do
     collection do
       get 'search'
     end
+    member do
+      post   '/like/:post_id' => 'likes#like',   as: 'like'
+      delete '/like/:post_id' => 'likes#dislike', as: 'dislike'
+    end
   end
   resources :users, only: :show
   

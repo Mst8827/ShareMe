@@ -8,6 +8,8 @@
     .row_contents__detail__image    
       = simple_format(@post.text)
       = image_tag @post.image, :width => '500', :height => '400'
+    .option
+      = render partial: 'likes/like', locals: { post: @post }
 
 
   .comments_input_form

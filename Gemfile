@@ -70,3 +70,5 @@ gem "haml-rails", ">= 1.0", '<= 2.0.1'
 gem "font-awesome-sass"
 #ユーザー管理機能追加
 gem 'devise'
+#非同期(ajax)を利用するため
+gem "jquery-rails"
