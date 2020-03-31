@@ -42,4 +42,9 @@
     =post.movie  
   .post__date
     = post.created_at.to_s(:datetime_jp)
+  .like-counts
+    - if post.likes_count.blank?
+      = 0
+    -else
+      = post.likes_count
   
