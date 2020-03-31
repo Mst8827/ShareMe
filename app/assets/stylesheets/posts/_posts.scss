@@ -217,7 +217,15 @@
         color: $other-post-content-text-color;
         font-size: 12px;
       }
- 
+      .like-counts {
+        &::before{
+          font-family: "Font Awesome 5 Free";
+          font-weight: bold;
+          content: '\f004';
+          color: rgb(255, 112, 195);
+        }
+      }
+
     }
   }
 }
