@@ -20,7 +20,7 @@
 
   .search_box
     = form_with(url: search_posts_path, local:true, method: :get, class: "search_form") do |form|
-      = form.text_field :keyword, placeholder: "Search", class: "search_input"
+      = form.text_field :keyword, placeholder: "検索する", class: "search_input"
       = form.submit "Search", class: "search_btn" 
 
   .main_content
