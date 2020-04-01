@@ -1,6 +1,6 @@
 .row_contents {
   padding-top: 80px;
-  min-height: 100vh;
+  // min-height: 100vh;
   background-color: $main-background-color;
 
   &__detail {
@@ -52,9 +52,47 @@
 
   .comments_input_form {
     margin: 10px 0 0 490px;
+    .textbox {
+      width: 500px;
+      height: 90px;
+    }
+    .form__submit {
+      display: block;
+      width: 500px;
+      height: 40px;
+      background-color: #66CCFF;
+      color: white;
+    }
   }
-
   .comments_all {
     margin-left: 490px;
+
+    h4 {
+      margin: 10px 0;
+    }
+
+    .comment-box {
+      word-break: break-all;
+      table-layout: fixed;
+      width: 500px;
+      margin-bottom: 5px;
+      border-radius: 50px 3px; 
+      background-color:rgba(219,234,255,0.7);
+      padding: 2%;
+
+      strong {
+        a.comment-name {
+          text-decoration: none;
+          color: #333333;
+        }  
+      }      
+    } 
+    .comment-text {
+      display: inline-block;
+    }
+    .comment-date {
+      font-size: 12px;
+      color: $other-post-content-text-color;
+    }
   }
 }
