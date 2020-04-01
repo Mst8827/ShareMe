@@ -72,3 +72,5 @@ gem "font-awesome-sass"
 gem 'devise'
 #非同期(ajax)を利用するため
 gem "jquery-rails"
+#ページネーションの実装
+gem 'kaminari'
