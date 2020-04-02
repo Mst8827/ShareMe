@@ -16,5 +16,6 @@ module ShareMe
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
     config.time_zone = 'Tokyo'
+    config.i18n.default_locale = :ja #ページネーション日本語化のため追加
   end
 end

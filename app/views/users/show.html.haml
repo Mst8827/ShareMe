@@ -11,16 +11,25 @@
       = @nickname
       さんの投稿一覧
     
-      - @posts.each do |post|
-        .user_posts
-          - simple_format(post.text)
-          .post__text
-            = post.text 
-          .post__image
+    - @posts.each do |post|
+      .user_posts
+        - simple_format(post.text)
+        .post__text
+          = post.text 
+        .post__image
+          = link_to "/posts/#{post.id}" do
             = image_tag "#{post.image}", :width => '500', :height => '400'
-          .post__movie
-            =post.movie          
+        .post__movie
+          =post.movie 
+        .post__bottom-navi         
           .post__date
             = post.created_at.to_s(:datetime_jp)
+          .like-counts
+            - if post.likes_count.blank?
+              = 0
+            -else
+              = post.likes_count
+
+  .p-top__paginate= paginate @posts
 
       
