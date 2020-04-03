@@ -55,13 +55,21 @@
       margin-top: 20px;
     }
 // -------------sign inのscss-------------
-    .sign-in-email {
+    .log-in-email {
       width: 400px;
       height: 40px;
     }
-    .sign-in-password {
+    .log-in-password {
       width: 400px;
       height: 40px;
+    }
+    .log-in-btn {
+      display: block;
+      width: 400px;
+      height: 40px;
+      background-color: #66CCFF;
+      color: white;
+      margin-top: 20px;
     }
   }  
 }
