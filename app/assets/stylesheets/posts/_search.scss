@@ -1,7 +1,87 @@
-.bottom_content {
+.search_box {
   padding-top: 80px;
-  height: 100vh;
   width: 100%;
-  background-color: #F0FFF0
+  background-color: $main-background-color;
+    
+  .search_input {
+    width: 550px;
+    height: 60px;
+    margin-top: 70px;
+    margin-left: 400px;
+    border-radius:30px;
+    border: 1px solid #BBBBBB;
+    outline: none;
+    padding: 2px 8px;
+  }
+  .search_btn {
+    height: 45px;
+    border-radius: 20px;
+    border: 1px solid #9370DB;
+    background-color: rgba(219, 234, 255, 0.7);
+    font-size: 18px;
+    width: 70px;    
+  }
+}
+.resault {
 
+  .post {
+    margin: 50px auto;
+    width: 600px;
+
+    .post_user_nickname {
+      color: $other-post-content-text-color;
+      
+      .post_user_name_link {
+        text-decoration: none;
+        color: #696969;
+      }
+      .post_user_name_link:hover {
+        font-weight: bold;
+      }      
+    }
+
+    .more {
+
+      .more_list {
+        
+        display: flex;
+
+        li {
+          
+          a {
+            text-decoration: none;
+            color: $other-post-content-text-color;
+            margin-right: 5px;
+            color: #696969;
+          }
+          a:hover {
+            font-weight: bold;
+          }
+          .edit_text {
+            color: $other-post-content-text-color;
+          }
+          .delete_text {
+            color: $other-post-content-text-color;
+          }
+        }
+      }        
+    }
+    
+    &__text {
+      color: $text-color;
+    }
+
+    &__date {
+      color: $other-post-content-text-color;
+      font-size: 12px;
+    }
+    .like-counts {
+      &::before{
+        font-family: "Font Awesome 5 Free";
+        font-weight: bold;
+        content: '\f004';
+        color: rgb(255, 112, 195);
+      }
+    }
+  }
 }

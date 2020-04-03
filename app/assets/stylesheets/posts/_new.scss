@@ -29,12 +29,8 @@
         -webkit-text-fill-color: transparent;//くり抜いた部分は背景を表示
         font-size: 70px;
         margin-left: 30px;
-      }
-      
-    }
-    
-
-    
+      } 
+    }  
   }
 
 
@@ -46,29 +42,31 @@
     margin-right: 40px;
     font-family: 'UserName';
   }
-
 }
 
 .content {
   padding-top: 80px;
   min-height: 100vh;
-  background-color: #F0FFF0;
+  background-color: $main-background-color;
 
   &__form_box {
     height: 600px;
     width: 600px;
     margin: 0 auto;
     margin-top: 50px;
-    background-color: rgb(238, 245, 238);
+    background-color: $main-background-color;
 
     &__title {
       font-family: 'Logo';
+      width: 500px;
+      margin: 50px auto;
       font-size: 30px;
       height: 70px;
       text-align: center;
-      line-height: 70px;
+      padding: 0.5em;
+      border: 1px solid rgb(124, 144, 235);
+      border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
     }
-
   }
   
   .form {
@@ -78,8 +76,7 @@
       display: block;
       height: 50px;
       width: 500px;
-      margin: 0 50px 10px;
-      
+      margin: 0 50px 10px;      
     }
 
     .form_text {
@@ -99,9 +96,6 @@
       background-color: black;
       color: white;
       font-size: 20px;
-
     }
-
   }
-
 }

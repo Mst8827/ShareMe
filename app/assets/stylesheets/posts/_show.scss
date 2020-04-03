@@ -1,12 +1,10 @@
 .row_contents {
   padding-top: 80px;
-  // min-height: 100vh;
   background-color: $main-background-color;
 
   &__detail {
     margin-left: 490px;
     margin-top: 60px;
-
 
     &__image {
 
@@ -47,7 +45,6 @@
         }
       }
     }
-
   }
 
   .comments_input_form {

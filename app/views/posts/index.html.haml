@@ -1,14 +1,12 @@
 .body
   .header 
     .header__bar
-      %h.title ShareMe
+      = link_to root_path do
+        %h.title ShareMe
       - if user_signed_in?
         .user_nav
           = link_to "/users/#{current_user.id}", class: 'current_user_name' do
             = current_user.nickname
-
-          -# = link_to users_current_user_id_path, class: 'mypage_btn' do
-          -#   = icon('fas', 'fa-user-circle')
 
           = link_to "logout", destroy_user_session_path, method: :delete, class: "logout_btn"
           = link_to new_post_path, class: 'post_btn' do
@@ -20,8 +18,8 @@
 
   .search_box
     = form_with(url: search_posts_path, local:true, method: :get, class: "search_form") do |form|
-      = form.text_field :keyword, placeholder: "検索する", class: "search_input"
-      = form.submit "Search", class: "search_btn" 
+      = form.text_field :keyword, placeholder: "キーワードを入力してください", class: "search_input"
+      = form.submit "検索", class: "search_btn" 
 
   .main_content
     - @posts. each do |post|
