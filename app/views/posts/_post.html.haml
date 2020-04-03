@@ -19,8 +19,6 @@
   .post__image
     = link_to "/posts/#{post.id}" do
       = image_tag "#{post.image}", :width => '500', :height => '400'
-  .post__movie
-    =post.movie
   .post__bottom-navi  
     .post__date
       = post.created_at.to_s(:datetime_jp)
