@@ -1,5 +1,5 @@
 .option__like{:id => "like-link-#{@post.id}"}
-  - if current_user.likes.find_by(post_id: post.id)
+  - if user_signed_in? && current_user.likes.find_by(post_id: post.id)
     = link_to dislike_post_path(@post.id, @post.id), method: :delete, remote: true, class: "option__like-on" do
       .fas.fa-heart
       -# .option__like-on__text いいね！
