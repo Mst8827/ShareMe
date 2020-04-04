@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: ShareMe_production
-  username: ShareMe
-  password: <%= ENV['SHAREME_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
