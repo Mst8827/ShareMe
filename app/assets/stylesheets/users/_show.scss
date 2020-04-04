@@ -13,10 +13,8 @@
     margin: 40px auto;
     width: 500px;
     height: 70px;
-    text-align: center;  
-    background: -webkit-linear-gradient(0deg, rgb(124, 144, 235), rgb(102, 228, 205));//背景色にグラデーションを指定
-    -webkit-background-clip: text;//テキストでくり抜く
-    -webkit-text-fill-color: transparent;//くり抜いた部分は背景を表示
+    text-align: center;
+    color: $each-pages-index-color;  
     font-family: 'Logo'; 
     font-size: 30px;
     padding: 0.5em;

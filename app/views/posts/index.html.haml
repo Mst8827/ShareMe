@@ -1,20 +1,5 @@
 .body
-  .header 
-    .header__bar
-      = link_to root_path do
-        %h.title ShareMe
-      - if user_signed_in?
-        .user_nav
-          = link_to "/users/#{current_user.id}", class: 'current_user_name' do
-            = current_user.nickname
-
-          = link_to "logout", destroy_user_session_path, method: :delete, class: "logout_btn"
-          = link_to new_post_path, class: 'post_btn' do
-            = icon('fas', 'edit', class: 'edit_btn')
-      - else
-        .user_nav
-          = link_to "login", new_user_session_path, method: :get, class: 'login_btn'
-          = link_to "sign up", new_user_registration_path, method: :get, class: "registration_btn"
+  = render partial: 'shared/header'
 
   .search_box
     = form_with(url: search_posts_path, local:true, method: :get, class: "search_form") do |form|

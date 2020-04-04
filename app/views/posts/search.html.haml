@@ -1,7 +1,4 @@
-.header 
-  .header__bar
-    = link_to root_path do
-      %h.title ShareMe
+= render partial: 'shared/header'
 
 .search_box
   = form_with(url: search_posts_path, local:true, method: :get, class: "search_form") do |form|

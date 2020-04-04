@@ -1,10 +1,5 @@
 .body
-  .header 
-    .header__bar
-      = link_to root_path do
-        %h.title ShareMe
-      .current_user_name
-        = @nickname
+  = render partial: 'shared/header'
 
   .contents
     .contents_user_info
@@ -29,5 +24,3 @@
               = post.likes_count
 
   .p-top__paginate= paginate @posts
-
-      
