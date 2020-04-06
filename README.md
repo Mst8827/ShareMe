@@ -73,8 +73,10 @@ Ruby(2.5.1)/Ruby on Rails(5.2.4.2)/PostgreSQL/Github/Heroku/Visual Studio Code
 
 - いいね機能を非同期通信で実装し、クリックするとカウントされもう一度クリックすると削除されるようにしました。</br>
 
-![8de1c2eb8f3b54a996b39ee79190a12f](https://user-images.githubusercontent.com/60685829/78528639-cfdbe900-781a-11ea-9d6f-36e5a8bb05f1.gif)
+![0ea8f4fda7cbf1d5fd1427ed8e835450](https://user-images.githubusercontent.com/60685829/78529286-3f9ea380-781c-11ea-9d65-981151450f07.gif)
+
 
 ## 課題
-画像＆コメント投稿と他人の投稿に対してコメントといいねのすごくシンプルなSNSなので、今後のスキルとして画像の投稿でなく動画投稿、またyoutubeとのAPI連携や</br>
-いいねやコメントが付いた時に誰からかの通知機能などより既存のSNS機能に近い実装が出来るようにしていきたいと思います。
+画像＆コメント投稿と他人の投稿に対してコメントといいねのすごくシンプルなSNSなので、</br>
+今後のスキルとして画像の投稿でなく動画投稿、またyoutubeとのAPI連携やいいねや</br>
+コメントが付いた時に誰からかの通知機能などより既存のSNS機能に近い実装が出来るようにしていきたいと思います。
