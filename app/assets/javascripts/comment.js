@@ -1,6 +1,5 @@
 $(function(){
   function buildHTML(comment){
-    console.log(comment);
     var html = `<div class="comment-box">
                   <strong>
                     <a class= "comment-name" href='/users/${comment.user_id}'>${comment.user_name}</a>
