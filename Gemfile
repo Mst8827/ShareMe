@@ -41,6 +41,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'sqlite3' #herokuでデプロイするために追記
   gem 'rspec-rails' #テスト用にRSpec導入
+  gem 'factory_bot_rails' #テスト用に導入
 end
 
 group :development do

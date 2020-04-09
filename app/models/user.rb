@@ -9,4 +9,6 @@ class User < ApplicationRecord
   has_many :like_items, through: :likes, source: :post
 
   validates :nickname, presence: true, length: { maximum: 8 }
+  validates :email, presence: true
+
 end
