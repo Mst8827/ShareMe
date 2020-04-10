@@ -28,13 +28,13 @@ describe User do
     it "passwordが存在してもpassword_confirmationがない場合は登録できないこと" do
       user = build(:user, password_confirmation: "")
       user.valid?
-      expect(user.errors[:password_confirmation]).to include("を入力してください")
+      expect(user.errors[:password_confirmation]).to include("とパスワードの入力が一致しません")
     end
 
     it "nicknameが9文字以上であれば登録できないこと" do
       user = build(:user, nickname: "123456789")
       user.valid?
-      expect(user.errors[:nickname]).to include("は%{count}文字以内で入力してください")
+      expect(user.errors[:nickname]).to include("は8文字以内で入力してください")
     end
 
     it "nicknameが8文字以下であれば登録できること" do
@@ -58,7 +58,7 @@ describe User do
     it "passwordが5文字以上であれば登録できないこと" do
       user = build(:user, password: "12345", password_confirmation: "12345")
       user.valid?
-      expect(user.errors[:password]).to include("は%{count}文字以内で入力してください")
+      expect(user.errors[:password]).to include("は6文字以上で入力してください")
     end
   end
 end
