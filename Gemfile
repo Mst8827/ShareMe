@@ -40,6 +40,9 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'sqlite3' #herokuでデプロイするために追記
+  gem 'rspec-rails' #テスト用にRSpec導入
+  gem 'factory_bot_rails' #テスト用に導入
+  gem 'rails-controller-testing' #コントローラーのテスト様に導入
 end
 
 group :development do
@@ -57,6 +60,7 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+  gem 'faker', "~> 2.8"
 end
 
 #herokuでデプロイするために記述
@@ -80,3 +84,4 @@ gem 'devise'
 gem "jquery-rails"
 #ページネーションの実装
 gem 'kaminari'
+
