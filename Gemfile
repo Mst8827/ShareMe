@@ -42,6 +42,7 @@ group :development, :test do
   gem 'sqlite3' #herokuでデプロイするために追記
   gem 'rspec-rails' #テスト用にRSpec導入
   gem 'factory_bot_rails' #テスト用に導入
+  gem 'rails-controller-testing' #コントローラーのテスト様に導入
 end
 
 group :development do
@@ -59,6 +60,7 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+  gem 'faker', "~> 2.8"
 end
 
 #herokuでデプロイするために記述
